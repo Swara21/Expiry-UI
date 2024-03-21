@@ -1,0 +1,93 @@
+.container {
+  max-width: 1000px;
+  margin: 60px auto; /* Adjust top margin to provide space for the navbar */
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-4 {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust width of columns to fit three in a row */
+  margin-bottom: 20px;
+}
+
+.card {
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  color: #fff; /* Set text color to white */
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.increase,
+.decrease {
+  font-size: 0.8rem;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.increase {
+  background-color: #28a745; /* Green for increase */
+}
+
+.decrease {
+  background-color: #dc3545; /* Red for decrease */
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+}
+
+.risk-assessment,
+.insights,
+.alerts {
+  margin-top: 20px;
+}
+.main-component {
+  min-height: calc(100vh - 120px); /* Adjust the height based on your footer's height */
+  overflow-y: auto; /* Add vertical scrollbar if content exceeds height */
+  padding-bottom: 60px; /* Adjust padding to prevent content from being hidden behind footer */
+}
+
+.container h1 {
+  font-size: 1rem; /* Adjust font size as needed */
+  text-align: left; /* Align text to the left */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the text */
+
+}

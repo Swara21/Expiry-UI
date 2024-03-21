@@ -1,0 +1,60 @@
+.footer {
+  background-color: #889cb1ab;
+  color: #fff;
+  padding: 50px 0 100px; /* Adjust bottom padding to leave space for the footer */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-left:120px;
+  position: relative; /* Ensure the footer has a position */
+  z-index: 1; /* Set a lower z-index compared to the main content */
+}
+
+.footer-container {
+  display: flex; /* Arrange footer columns side-by-side */
+  width: 80%; /* Limit container width to 80% */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.footer-col {
+  flex: 1; /* Distribute remaining space equally among columns */
+  margin-right: 30px; /* Add margin for spacing between columns */
+}
+
+.footer-col:last-child {
+  margin-right: 0; /* Remove margin from the last column */
+}
+
+.footer-col h3 {
+  margin-bottom: 10px; /* Add margin below the heading */
+  font-size: 1.2rem; /* Adjust heading font size */
+}
+
+.footer-col a {
+  color: inherit; /* Inherit white text color from footer */
+  text-decoration: none; /* Remove underline from links */
+  margin-bottom: 10px; /* Add margin between links */
+  display: block; /* Make links appear stacked vertically */
+}
+
+.footer-col a:hover {
+  color: #f08055; /* Change link color on hover to orange */
+}
+
+.social-links a {
+  margin-right: 10px; /* Add margin between social links */
+}
+
+.social-links i {
+  font-size: 20px; /* Adjust social link icon size */
+}
+
+.copyright {
+  text-align: center; /* Center copyright text */
+  margin-top: 20px; /* Add margin above copyright */
+  font-size: 0.8rem; /* Adjust copyright text size */
+}

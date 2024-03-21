@@ -1,0 +1,16 @@
+<!-- inventory.component.html -->
+<div class="dashboard">
+  <div class="section">
+    <h2>Inventory Overview</h2>
+    <div class="overview">
+      <div class="card" *ngFor="let product of InventoryItem">
+        <h3>{{ product.productName }}</h3>
+        <p>Manufacture Date: {{ product.manufactureDate }}</p>
+        <p>Expiry Date: {{ product.expiryDate }}</p>
+        <p>Price: {{ product.price }}</p>
+        <p>Previous Sales: {{ product.previousSales }}</p>
+        <p>Quantity: {{ product.quantity }}</p>
+      </div>
+    </div>
+  </div>
+</div>
