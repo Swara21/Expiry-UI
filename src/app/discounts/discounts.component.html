@@ -1,1 +1,19 @@
-<p>discounts works!</p>
+<table class="discount-table">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Updated Price</th>
+        <th>Expiry in Days</th>
+        <th>Discount (%)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of discountedProducts">
+        <td>{{ product.productName }}</td>
+        <td>{{ product.updatedPrice }}</td>
+        <td>{{ product.expiryInDays }}</td>
+        <td>{{ product.discount }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

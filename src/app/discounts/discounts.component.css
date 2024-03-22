@@ -1,0 +1,53 @@
+.discount-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.discount-table th, .discount-table td {
+  padding: 12px; /* Increased padding for better spacing */
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif; /* Use a common sans-serif font */
+}
+
+.discount-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.discount-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.discount-table tbody tr:hover {
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease; /* Add smooth hover effect */
+}
+
+.discount-table tbody tr:hover td {
+  color: #333; /* Change text color on hover for better contrast */
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle; /* Align the status indicator vertically */
+}
+
+.expired .status-indicator {
+  background-color: red;
+}
+
+.about-to-expire .status-indicator {
+  background-color: orange;
+}
+
+.long-shelf-life .status-indicator {
+  background-color: green;
+
+
+  
+}

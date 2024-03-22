@@ -1,3 +1,15 @@
+body {
+  background-color: rgba(185, 185, 234, 0.941); /* Set background color to blue */
+}
+
+.main-component {
+  max-height: calc(100vh - 180px); /* Adjust the height based on your footer's height and desired padding */
+  overflow-y: auto; /* Add vertical scrollbar if content exceeds height */
+  padding-bottom: 150px; /* Adjust padding to prevent content from being hidden behind footer */
+  max-width: 1000px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
 .container {
   max-width: 1000px;
   margin: 60px auto; /* Adjust top margin to provide space for the navbar */
@@ -19,7 +31,7 @@
   border-radius: 5px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
   background: linear-gradient(45deg, #ff7e5f, #feb47b);
   color: #fff; /* Set text color to white */
 }
@@ -50,12 +62,6 @@
   background-color: #dc3545; /* Red for decrease */
 }
 
-.dashboard {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
 .section {
   flex: 1;
   padding: 20px;
@@ -79,15 +85,25 @@
 .alerts {
   margin-top: 20px;
 }
-.main-component {
-  min-height: calc(100vh - 120px); /* Adjust the height based on your footer's height */
-  overflow-y: auto; /* Add vertical scrollbar if content exceeds height */
-  padding-bottom: 60px; /* Adjust padding to prevent content from being hidden behind footer */
+
+.alert {
+  background-color: rgba(235, 243, 8, 0.854); /* Yellow background for alerts */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  animation: moveText 5s linear infinite; /* Adjust animation duration and timing function as needed */
 }
 
-.container h1 {
-  font-size: 1rem; /* Adjust font size as needed */
-  text-align: left; /* Align text to the left */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the text */
+.alert p {
+  margin: 0;
+  font-size: 1rem;
+}
 
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }

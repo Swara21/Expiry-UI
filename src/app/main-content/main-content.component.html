@@ -1,54 +1,71 @@
-<div class="container">
-  <h1>Dashboard</h1>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card">
-        <h2>Weekly Sales</h2>
-        <p>$15,000</p>
-        <span class="increase">Increased by 60%</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="main-content.component.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <div class="main-component">
+    <div class="container">
+      <h1>Dashboard</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <h2>Fresh Fruits</h2>
+            <p>Quantity</p>
+            <span class="increase">1</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <h2>Inventory count</h2>
+            <p>Quantity</p>
+            <span class="decrease">3</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <h2>Expired Products</h2>
+            <p>Quantity</p>
+            <span class="increase">1</span>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card">
-        <h2>Weekly Orders</h2>
-        <p>45,634</p>
-        <span class="decrease">Decreased by 10%</span>
+
+    <!-- Risk Assessment Panel Section -->
+    <div class="section">
+      <h2>Risk Assessment Panel</h2>
+      <div class="risk-assessment">
+        <!-- Product details and metrics here -->
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card">
-        <h2>Visitors Online</h2>
-        <p>95,574</p>
-        <span class="increase">Increased by 5%</span>
+
+    <!-- Actionable Insights Section -->
+    <div class="section">
+      <h2>Actionable Insights</h2>
+      <div class="insights">
+        <!-- Recommendations and adjustments here -->
+      </div>
+    </div>
+
+    <!-- Alerts Section -->
+    <div class="section">
+      <h2>Alerts</h2>
+      <div class="alerts">
+        <div class="alert">
+          <p><strong>Expiry Alert:</strong> Lays Chips have expired.</p>
+        </div>
+        <div class="alert">
+          <p><strong>Expiry Alert:</strong> Amul Ghee is about to expire in 3 days.</p>
+        </div>
+        <div class="alert">
+          <p><strong>Low Stock Alert:</strong> Amul Ghee is running low in stock.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- Risk Assessment Panel Section -->
-<div class="section">
-  <h2>Risk Assessment Panel</h2>
-  <div class="risk-assessment">
-    <!-- Product details and metrics here -->
-  </div>
-</div>
-
-<!-- Actionable Insights Section -->
-<div class="section">
-  <h2>Actionable Insights</h2>
-  <div class="insights">
-    <!-- Recommendations and adjustments here -->
-  </div>
-</div>
-
-<!-- Alerts Section -->
-<div class="section">
-  <h2>Alerts</h2>
-  <div class="alerts">
-    <!-- Recent notifications here -->
-  </div>
-</div>
-
-
-
-
-
+</body>
+</html>

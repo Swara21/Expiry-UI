@@ -1,1 +1,42 @@
-<p>expired-dashboard works!</p>
+<div class="dashboard">
+    <!-- Expired Products Table -->
+    <div class="section">
+      <h2>Expired Products</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Expiry Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of InventoryItem">
+            <td>{{ product.productName }}</td>
+            <td>{{ product.expiryDate | date }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- Rotten Products Table -->
+    <div class="section">
+      <h2>Rotten Fruits/Vegetables</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product Category</th>
+            <th>Product Name</th>
+            <th>Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of Groceries">
+            <td>{{ product.productCategory }}</td>
+            <td>{{ product.productName }}</td>
+            <td><img [src]="product.imageUrl" alt="Product Image" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

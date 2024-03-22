@@ -1,8 +1,9 @@
-/* inventory.component.css */
+/* inventory.component.css
 .dashboard {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  background-color: black;
 }
 
 .section {
@@ -35,4 +36,68 @@
 .card p {
   font-size: 1rem;
   margin-bottom: 5px;
+} */
+
+/* inventory.component.css */
+/* inventory.component.css */
+
+.dashboard {
+  max-height: calc(100vh - 180px); /* Adjust the height based on your footer's height and desired padding */
+  overflow-y: auto; /* Add vertical scrollbar if content exceeds height */
+  display: flex;
+  justify-content: center;
+  font-style: bold;
+}
+
+.section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.overview {
+  overflow-x: auto; /* Add horizontal scrollbar if content exceeds width */
+}
+
+table {
+  width: 100%; /* Make the table fill its container */
+  border-collapse: collapse; /* Collapse border spacing */
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd; /* Add border for each cell */
+}
+
+thead {
+  background-color: #f2f2f2; /* Light gray background for header row */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row background color */
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0; /* Hover effect for rows */
+}
+/* Add CSS classes for color-coding */
+.status-indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.expired {
+  background-color: red; /* Red color for expired */
+  color:red;
+}
+
+.about-to-expire {
+  background-color: orange; /* Orange color for about to expire */
+}
+
+.long-shelf-life {
+  background-color: green; /* Green color for shelf life > 365 days */
 }
